@@ -4,10 +4,7 @@ This repository contains practical scripts designed to help everyone avoid commo
 
 ## Repository Structure
 
-The `Practical-Scripts` directory contains the following subdirectory:
-
 ### `HuggingFaceScripts/`
-
 This directory contains two scripts related to Hugging Face datasets and symbolic links:
 
 1. **`Dataset_download_w_selected.py`**  
@@ -16,4 +13,8 @@ This directory contains two scripts related to Hugging Face datasets and symboli
 2. **`Dataset_download_w_selected_symbolic_links.py`**  
    This script is similar to the previous one but also supports creating symbolic links for downloaded datasets, enabling more efficient dataset management.
 
+### `GithubScripts/`
+This directory contains helpful guides and documentation for GitHub-related tasks:
 
+1. **`MergeUpstreamUpdate.md`**  
+   A step-by-step guide on how to merge upstream changes into your local fork. It covers fetching the latest changes, merging them into your local branch, resolving conflicts, and pushing the updated branch to your own GitHub repository.
