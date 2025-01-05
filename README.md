@@ -56,6 +56,20 @@ This directory includes a collection of Conda environment YAML files for various
 
 ---
 
+### `Amulet/`
+This directory contains instructions and examples related to [AMLT](https://amulet-docs.azurewebsites.net/main/config_file.html). Specifically, it includes a **`README.md`** covering:
+
+- **`amlt cache base-images`**  
+  - How to list all AMLT base images (including NVIDIA and AMD).
+- **SLA Tier**  
+  - How to select between **Premium**, **Standard**, and **Basic** service tiers.  
+- **Documentation Link**  
+  - Direct link to official AMLT docs for further configuration details.
+
+For more information, see [`Amulet/README.md`](Amulet/README.md).
+
+---
+
 ## Contributing
 Feel free to open issues or create pull requests if you have any improvements or additional scripts you’d like to include. We welcome community contributions and feedback.
 
