@@ -62,11 +62,27 @@ This directory contains instructions and examples related to [AMLT](https://amul
 - **`amlt cache base-images`**  
   - How to list all AMLT base images (including NVIDIA and AMD).
 - **SLA Tier**  
-  - How to select between **Premium**, **Standard**, and **Basic** service tiers.  
+  - How to select between **Premium**, **Standard**, and **Basic** service tiers.
 - **Documentation Link**  
   - Direct link to official AMLT docs for further configuration details.
 
 For more information, see [`Amulet/README.md`](Amulet/README.md).
+
+---
+
+### `Undist/`
+This directory contains the undistortion script along with its documentation:
+
+1. **`script.py`**  
+   A Python script that implements an image undistortion process. It rotates the input image so that a specified pixel becomes the new forward direction, then remaps the image using a computed homography. The script:
+   - Converts the target pixel to a normalized camera ray by applying the inverse of the camera intrinsics matrix.
+   - Computes a rotation matrix (via the Rodrigues formula) that rotates the ray to align with \([0, 0, 1]^T\).
+   - Constructs a new intrinsics matrix to center the image and forms a homography.
+   - Uses OpenCV's `cv2.warpPerspective` to generate the final undistorted image.
+
+2. **`README.md`**  
+   Documentation that explains the underlying principles of the undistortion process, along with detailed usage instructions and code examples.  
+   For more details on the implementation and usage, please refer to [`Undist/README.md`](Undist/README.md).
 
 ---
 
@@ -79,4 +95,5 @@ This repository is made available under the [MIT License](LICENSE). Please revie
 ---
 
 **Author**: Aaron Feng  
-**Last Update**: 1/5/2025
+**Last Update**: 2/11/2025
+```
